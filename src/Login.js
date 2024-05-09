@@ -3,6 +3,7 @@ import Logo from "./utils/Assets/Logo.png";
 import WelcomePhoto from "./utils/Assets/WelcomePhoto.png";
 import { HiOutlineMail } from "react-icons/hi";
 import { AiOutlineEyeInvisible } from "react-icons/ai";
+import { FaCircleChevronRight } from "react-icons/fa6";
 
 const Login = () => {
   return (
@@ -10,7 +11,7 @@ const Login = () => {
       <div className="w-5/12">
         <img className="w-full" src={Logo} alt="Logo" />
       </div>
-      <div className="flex flex-col justify-between items-center absolute left-40 top-80 transform -translate-y-2/4">
+      <div className="flex flex-col justify-between items-center absolute left-40 top-96 transform -translate-y-2/4">
         <div className="relative">
           <HiOutlineMail className="absolute left-3 w-10 h-8 top-1/2 transform -translate-y-1/2 text-black" />
           <input
@@ -27,14 +28,23 @@ const Login = () => {
             placeholder="Password"
           />
         </div>
-        <div className="relative top-24">
+        <div className="relative flex flex-col justify-center items-center gap-16 top-24">
           <div>
-            <button>LOGIN</button>
+            <button className="bg-[#d0e7b7] px-8 py-2 rounded-full text-lg text-[#266038] font-bold text-pretty">
+              LOGIN
+            </button>
           </div>
           <div>
-            <div>
-              <p>Not an Existing User?</p>
-              <button>Sign Up</button>
+            <div className="flex gap-8">
+              <p className="text-white text-lg ">Not an Existing User?</p>
+              <button className="flex items-center bg-slate-800 text-white font-semibold gap-8 px-16 rounded-full focus:outline-none relative">
+                <span className="absolute left-1/2 transform -translate-x-1/2">
+                  Sign Up
+                </span>
+                <div className="absolute right-1">
+                  <FaCircleChevronRight className="text-xl" />
+                </div>
+              </button>
             </div>
           </div>
         </div>
