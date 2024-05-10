@@ -11,7 +11,7 @@ const SignUp = () => {
       </div>
       <div className="flex">
         <div className="flex flex-col pl-16 gap-8 ">
-          <h1 className="text-5xl text-left mt-4 font-semibold">
+          <h1 className="text-5xl text-left mt-4 font-semibold text-[#d5f4b4]">
             Create Account
           </h1>
           <div className="flex gap-12">
